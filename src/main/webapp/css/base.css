@@ -1,0 +1,86 @@
+.box{
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #cccccc;
+    width: 300px;
+}
+
+/*hack para que el autocomplete de jquery ui se vea bien sobre el modal de bootstrap*/
+.ui-autocomplete{
+    z-index: 5000;
+}
+
+.map-crea-viaje{
+    width:400px;
+    height:340px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.btn-float{
+    float: right;
+}
+
+.modal .modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.recomendacion-no-leida{
+    background-color: #CCCCCC;
+}
+
+.ui-autocomplete-loading {
+    background:url('../img/loading_0.gif') no-repeat right center
+}
+
+.vuelo-tramos-detail{
+    font-size: 12px;
+}
+
+.vuelo-tramo-ajuste{
+    display: inline;
+}
+
+.vuelo-selected{
+    background-color: #CCCCFF;
+}
+
+.list-group-item.active{
+    background-color: #0F364D;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modalCargando {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modalCargando {
+    display: block;
+}
+
+.modal-body {
+    max-height: 800px;
+}
